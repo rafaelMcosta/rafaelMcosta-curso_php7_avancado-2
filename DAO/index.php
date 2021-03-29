@@ -34,10 +34,18 @@ echo $usuario;
 */
 
 //Inserindo um usuário no banco
-$aluno = new Usuario("aluno", "@luno");
+/*$aluno = new Usuario("aluno", "@luno");
 
 $aluno->insert();
 
-echo $aluno;
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "!¨#$@%*&");
+
+echo $usuario;
 
 ?>
