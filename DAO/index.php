@@ -27,10 +27,17 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 //Carrega um usuário usando o login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("root", "!@#$");
 
 echo $usuario;
+*/
 
+//Inserindo um usuário no banco
+$aluno = new Usuario("aluno", "@luno");
+
+$aluno->insert();
+
+echo $aluno;
 
 ?>
