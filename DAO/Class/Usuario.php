@@ -121,6 +121,21 @@ class Usuario {
 
 	}
 
+	public function update($login, $password){
+
+		$this->setDeslogin($login);
+		$this->setDessenha($password);
+
+		$sql = new Sql();
+
+		$sql->query("UPDATE tb_usuarios SET deslogin = :LOGIN, desenha = :PASSWORD WHERE idusuario = :ID", array(
+			':LOGIN'=>$this->getDeslogin(),
+			':PASSWORD'=>$this->getDessenha(),
+			':ID'=>$this->getIdusuario()
+		));
+
+	}
+
 	//Aspas setando os valores vazios caso não seja passado valores na hora da criação do objeto
 	public function __construct($login = "", $password = ""){
 
