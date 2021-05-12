@@ -1,0 +1,15 @@
+{
+    "name": "rafael.costa/composer",
+    "description": "Curso Completo de PHP 7 - Udemy - Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rafael Alves",
+            "email": "rafaelmachadocosta@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
