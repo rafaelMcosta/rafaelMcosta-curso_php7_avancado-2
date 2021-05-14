@@ -58,23 +58,19 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-//$mail->Username = 'e-mail da conta de envio';
-$mail->Username = 'costamachrafael@gmail.com';
+$mail->Username = 'e-mail da conta de envio';
 
 //Password to use for SMTP authentication
-//$mail->Password = 'senha da conta de envio';
-$mail->Password = 'xbox18250621';
+$mail->Password = 'senha da conta de envio';
 
 //Set who the message is to be sent from
-//$mail->setFrom('e-mail da conta de envio', 'Rafael Alves');
-$mail->setFrom('costamachrafael@gmail.com', 'Rafael Alves');
+$mail->setFrom('e-mail da conta de envio', 'Rafael Alves');
 
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-//$mail->addAddress('e-mail da conta do destinatário', 'Rafael Costa');
-$mail->addAddress('rafaelmachadocosta@hotmail.com', 'Rafael Costa');
+$mail->addAddress('e-mail da conta do destinatário', 'Rafael Costa');
 
 //Set the subject line
 $mail->Subject = 'Testando a classe PHPMailer e Rain/Tpl com Gmail';
